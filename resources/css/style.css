@@ -88,7 +88,9 @@ li {
 	margin: 3rem 0 0 0;
 }
 
-.product {
+.product,
+.watch,
+.glasses {
 	width: 30%;
 }
 
@@ -101,10 +103,34 @@ li {
 	align-items: center;
 }
 
+.product-image img {
+	max-width: 8rem;
+}
+
 .description {
 	background-color: black;
 	color: white;
 	padding: 0.5rem;
 	text-align: center;
 	display: block;
+}
+
+.info {
+	width: 35%;
+}
+
+.info .title {
+	padding: 1rem 2rem;
+	display: block;
+	background-color: black;
+	color: white;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 5rem 0;
+	margin-top: 4rem;
+	font-family: Helvetica;
+    font-size: 1rem;
 }
