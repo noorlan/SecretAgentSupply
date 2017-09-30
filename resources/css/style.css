@@ -1,10 +1,17 @@
 * {
-	font-size: 18px;
+	font-size: 18px; 
+}
+
+.header,
+.headline,
+.description,
+.info .title,
+footer {
+	background-color: black;
+	color: white;
 }
 
 .header {
-	background-color: black;
-	color: white;
 	padding: 0.66rem 0;
 }
 
@@ -28,9 +35,15 @@ img {
 	border-style: none;
 }
 
-span {
+.header span,
+.headline h4,
+.description,
+.info .title,
+.info span,
+footer .container {
 	font-family: Helvetica;
 	font-size: 1rem;
+	font-weight: bold;
 }
 
 .main-banner {
@@ -42,20 +55,18 @@ span {
 }
 
 .headline {
-	background-color: black;
-	color: white;
 	width: 20rem;
 	padding: 2rem 3rem;
 	position: relative;
 	top: 9rem;
-	font-family: Helvetica;
 }
 
 .headline h1 {
 	font-size: 2rem;
+	font-weight: bold;
+	font-family: Helvetica;
 	line-height: 2.5rem;
 	margin: 0.25rem 0;
-	font-weight: bold;
 }
 
 nav {
@@ -108,11 +119,9 @@ li {
 }
 
 .description {
-	background-color: black;
-	color: white;
 	padding: 0.5rem;
 	text-align: center;
-	display: block;
+	display: block;	
 }
 
 .info {
@@ -122,15 +131,68 @@ li {
 .info .title {
 	padding: 1rem 2rem;
 	display: block;
-	background-color: black;
-	color: white;
+	margin-bottom: 0.5rem;
 }
 
-footer {
-	background-color: black;
-	color: white;
+footer .container {
+	text-align: left;
 	padding: 5rem 0;
 	margin-top: 4rem;
-	font-family: Helvetica;
-    font-size: 1rem;
+} 
+
+@media only screen and (max-width: 1024px) {
+	body {
+		font-size: 16px;
+	}
+	nav ul,
+	.glasses {
+		display: none;
+	}
+	.mobile-nav {
+		display: block;
+		text-align: center;
+	}
+	.product,
+	.watch {
+		width: 47%;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.main-banner {
+		height: 15rem;
+	}
+	.headline {
+		width: 100%;
+		padding: 1rem 2rem;
+	}
+	.headline h4 {
+		font-family: Helvetica;
+		font-size: 0.77rem;
+		font-weight: bold;
+	}
+	.headline h1 {
+		font-family: Helvetica;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.product {
+		width: 90%;
+		margin: auto;
+	}
+	.watch,
+	.glasses {
+		display: none;
+	}
+	.products,
+	.business-info {
+		flex-wrap: wrap;
+	}
+	.info {
+		width: 90%;
+		margin: 0.5rem auto;
+	}
+	footer .container {
+		text-align: center;
+	}
 }
